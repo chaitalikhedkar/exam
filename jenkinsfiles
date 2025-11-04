@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    
     stages {
         stage('Build') {
             steps {
@@ -21,7 +22,7 @@ pipeline {
             echo 'Build Successfully'
         }
         failure {
-            echo 'build failed'
+            echo 'build failure'
         }
     }
 }
